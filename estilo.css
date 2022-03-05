@@ -1,0 +1,381 @@
+/* SETEAR */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-align: justify;
+  background-color: rgb(250, 248, 245);
+}
+
+h2,
+h3{
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: 50;
+  font-family: "Times New Roman", Times, serif, black;
+  text-decoration: solid;
+  text-decoration: underline;
+
+}
+
+.logo {
+  display: flex;
+  height: 90%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nombreBanco {
+  text-align: center;
+  padding-right: 50%;
+}
+/* HEADER  */
+.header {
+  background-color: rgb(247, 237, 158);
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+.header_navbar {
+  border: 1rem;
+}
+.header_navbar__principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* body */
+
+/* DATOS USUARIO */
+.section-identidad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 1rem;
+  border-style: double;
+}
+#boton-identidad-login{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* DATOS PF */
+
+.container__titulo {
+  padding-bottom: 2%;
+  font-family: "Times New Roman", Times, serif, black;
+  font-size: large;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+
+.div-card-identidad {
+  align-items: center;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 35px;
+  background-color: rgb(253 190 106 / 28%);
+  margin-bottom: 2%;
+}
+
+.datosPF{
+  font-family: "Times New Roman", Times, serif, black;
+  font-size: large;
+  margin-top: 0.5%;
+}
+
+
+.card_text {
+  text-align: center;
+}
+
+.extension {
+  font-style: normal;
+  text-decoration: solid;
+  text-decoration-color: black;
+  font-size: medium;
+}
+
+#section-plazo-fijo-historial {
+  display: none;
+}
+.titulo_plazoymonto{
+  text-decoration: solid;
+  /* margin-top: 0.5%; */
+}
+
+#boton-generar-plazo-fijo{
+  margin-top: 1%;
+  margin-bottom:1%;
+}
+
+.dolar{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* BONOS */
+.titulo_bono {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0%;
+  margin-bottom: 1%;
+}
+
+.containerDivsBonos {
+  padding-bottom: 2%;
+  font-family: "Times New Roman", Times, serif, black;
+  font-size: large;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+}
+
+.div-card-identidadBonos {
+  align-items: center;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: rgb(253 190 106 / 28%);
+}
+.explicacionBonos {
+  text-align: center;
+}
+
+.card_img {
+  padding: 22%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+}
+#boton-bonos-invertir{
+  margin-bottom: 5%;
+  margin-top: 3%;
+} 
+
+/* .titulo_montoyplazo{
+  margin-top: 0.5%;
+  margin-bottom: 1%;
+} */
+
+/* //contactanos */
+
+.container__titulo_contactanos {
+  text-align: center;
+  padding-left: 1%;
+  text-decoration: solid;
+  text-decoration: underline;
+  font-size: large;
+}
+
+.form {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.form input,
+.form label {
+  display: block;
+  margin: 0.25rem auto;
+}
+
+.form input {
+  margin: 0.5rem auto;
+  max-width: 25rem;
+}
+
+.form__fila {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.obtener_info__fila {
+  display: block;
+}
+
+.obtener_info__fila label,
+.obtener_info__fila input {
+  display: inline-block;
+}
+
+/* TABLA */
+
+table.redTable {
+  border: 2px solid #f59416;
+  background-color: #eee7db;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td,
+table.redTable th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 13px;
+}
+table.redTable tr:nth-child(even) {
+  background: #f5c8bf;
+}
+table.redTable thead {
+  background: #f59416;
+}
+table.redTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #f59416;
+}
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #f59416;
+}
+table.redTable tfoot td {
+  font-size: 13px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a {
+  display: inline-block;
+  background: #ffffff;
+  color: #f59416;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+/* texto inversiones  */
+.masInversiones {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-evenly;
+  background-color: rgb(253 190 106 / 28%);
+}
+#boton-click-mas-inversiones{  
+text-align: center;
+}
+
+
+#boton-click
+{ background-color: rgb(253 190 106 / 28%);
+  text-align: center;
+}
+
+/* 
+dolar */
+.dolar_oficial_precio_venta,
+.dolar_oficial_precio_compra{
+color:blue;
+font-size: large;
+align-content: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+border-radius: 2%;
+margin-top: 1%;
+margin-bottom: 1%;
+}
+
+
+h2{
+font-family:"Times New Roman", Times, serif, black;
+text-decoration: underline;  
+}
+
+
+
+/*error404*/
+.page_404 {
+  padding: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
+  font-size: large;
+  width: 100%;
+}
+
+.lost{
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-center{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  color: blue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header > h1 {
+  text-align: justify;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #0ac7ca;
+}
+
+#astronaut > img {
+  padding: 30px;
+  display: block;
+  width: 90%;
+}
+
+.not_available{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#buttonReturnHome{
+  text-align: center;
+}
+#boton-respuesta{
+  text-align: center;
+}
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMULADOR DE INVERSIONES BANCO SUCCESSL</title>
+    <link rel="stylesheet" href="./estilo.css" />
+    <link rel="shortcut icon" href="./imgs/favicon.png" />
+    <link rel="stylesheet" href="./error.html" />
+    <link rel="stylesheet" href="./contacto.html" />
+  </head>
+  <body>
+    <header class="border">
+      <img class="logo" src="./imgs/bancosuccesslogo.jpg" alt="Logo" />
+      <nav class="header_navbar">
+        <ul class="header_navbar__principal">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="bonos.html">BONOS</a></li>
+          <li><a href="contacto.html">MAS INVERSIONES</a></li>
+          <li><a href="contacto.html">CONTACTANOS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="section-identidad">
+      <div class="div-card-identidad">
+        <p>Datos del Usuario</p>
+        <input
+          class="input input-formularioNombre"
+          type="text"
+          name="Nombre"
+          id="identidad-nombre"
+          placeholder="Nombre"
+        />
+        <input
+          class="input input-formulariocontrasenia"
+          type="password"
+          name="password"
+          id="identidad-password"
+          placeholder="Contraseña"
+        />
+        <button id="boton-identidad-login">Login</button>
+      </div>
+    </section>
+
+    <div class="cotizaciones">
+      <h2>Cotizaciones del dolar hoy</h2>
+      <h3 class="dolar">Dólar oficial venta</h3>
+      <div class="dolar_oficial_precio_venta"></div>
+      <h3 class="dolar">Dólar oficial Compra</h3>
+      <div class="dolar_oficial_precio_compra"></div>
+    </div>
+
+    <!-- section-plazo-fijo -->
+
+    <section id="section-plazo-fijo" class="plazoFijo">
+      <div class="div-card-identidad">
+        <div class="container__titulo">¿Interesado en un Plazo Fijo?</div>
+        <h2 class="datosPF">Datos del plazo fijo</h2>
+        <p class="titulo_plazo">Monto del PF</p>
+        <input
+          type="number"
+          min="1000"
+          max="10000"
+          step="1000"
+          name="plazo-fijo-monto"
+          id="plazo-fijo-monto"
+          placeholder="Monto de plazo fijo"
+        />
+        <p class="titulo_dias">Plazo en días</p>
+        <input
+          type="number"
+          min="30"
+          max="360"
+          step="30"
+          name="plazo-fijo-plazo"
+          id="plazo-fijo-plazo"
+          placeholder="Plazo del plazo fijo"
+        />
+        <div id="plazo-fijo-estado"></div>
+        <button id="boton-generar-plazo-fijo">Generar plazo fijo</button>
+      </div>
+    </section>
+
+    <section id="section-plazo-fijo-historial">
+      <div class="div-card-identidad">
+        <p>Historial del plazo fijo</p>
+        <p>Elija un plazo para el detalle del historial:</p>
+        <select id="select-historial-plazo">
+          <option value="30">30 días</option>
+          <option value="60">60 días</option>
+          <option value="90">90 días</option>
+          <option value="120">120 días</option>
+          <option value="150">150 días</option>
+          <option value="180">180 días</option>
+          <option value="210">210 días</option>
+          <option value="240">240 días</option>
+          <option value="270">270 días</option>
+          <option value="300">300 días</option>
+          <option value="330">330 días</option>
+          <option value="360">360 días</option>
+        </select>
+        <div id="plazo-fijo-historial-detalle"></div>
+      </div>
+    </section>
+
+    <div class="card_text">
+      <br />
+      <p></p>
+      <h3>¿Què es un Plazo Fijo?</h3>
+      <p>
+        Un plazo fijo, ante todo, es un instrumento de ahorro. Se trata de un
+        depósito de dinero que podés hacer por un tiempo determinado. Concluido
+        ese tiempo, el banco te devuelve el dinero que invertiste más los
+        intereses generados.
+      </p>
+      <h3>Requisitos para abrir un plazo fijo</h3>
+
+      <p>
+        Si ya sos cliente del Banco Provincial, podés constituir cualquier plazo
+        fijo siempre que cumplas con las condiciones de monto mínimo de cada
+        uno. Podes invertir montos desde $10 a $1.000.000, hasta un plazo màximo
+        de un año. ¿Querés hacer tu plazo fijo y no sos cliente? ¡Hace tu plazo
+        fijo online!
+      </p>
+
+      <p>Recordá que para operar en el banco tenés que ser mayor de 18 años.</p>
+
+      <div class="card_img">
+        <img
+          src="./imgs/pareja_plazoFijo.jpg"
+          alt="Foto Pareja Feliz y Ahorradora"
+        />
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/login.js"></script>
+    <script src="./javascript/PlazoFijo.js"></script>
+    <script src="./javascript/plazosFijos.js"></script>
+    <script src="./javascript/precioDolar.js"></script>
+  </body>
+</html>

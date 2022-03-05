@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULADOR DE INVERSIONES BANCO SUCCESS</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="shortcut icon" href="./imgs/favicon.png" />
+    <link rel="stylesheet" href="./error.html">
+    
+</head>
+<body>
+<header class="border">
+        <img
+        class="logo"
+        src="./imgs/bancosuccesslogo.jpg"
+        alt="Logo"
+        />
+        <nav class="header_navbar">
+            <ul class="header_navbar__principal">
+                <li> <a href="index.html">HOME</a></li>
+                <li><a href="bonos.html">BONOS</a></li>
+                <li><a href="contacto.html"> MAS INVERSIONES</a></li>
+                <li><a href="contacto.html">CONTACTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section-identidad">
+      <div class="div-card-identidad">
+        <p>Datos del Usuario</p>
+          <input
+            class="input input-formularioNombre"
+            type="text"
+            name="Nombre"
+            id="identidad-nombre"
+            placeholder="Nombre"
+          />
+          <input
+            class="input input-formulariocontrasenia"
+            type="password"
+            name="password"
+            id="identidad-password"
+            placeholder="Contraseña"
+          />
+          <button id="boton-identidad-login">Login</button>          
+      </div>
+    </section>
+
+    <section id="explicacionBonos" class="Bonos">
+        <div class="containerDivsBonos">¿Interesado en un Bono?</div>
+    
+    <div class="div-card-identidadBonos">
+    <h2 class="titulo_bono">Datos del bono </h2>
+    <p class="titulo_montoyplazo">Monto del Bono</p>
+    <input
+    class="input input-formularioNombre"
+    type="number"
+    min="1000"
+    max="10000"
+    step="1000"
+    name="bono-monto"
+    id="bono-monto"
+    placeholder="Monto del bono"
+    />
+    <p class="titulo_montoyplazo">Plazo del Bono</p>
+    <input
+    class="input input-formularioNombre"
+    type="number"
+    min="30"
+    max="360"
+    step="30"
+    name="bono-plazo"
+    id="bono-plazo"
+    placeholder="Plazo del bono"
+    />
+    <div id="bono-respuesta">
+              <button id="boton-bonos-invertir">Invierta en un bono</button>
+          </div>
+        </div>
+    
+    <p class="explicacionBonos"> La valuación de los bonos se hace al precio teórico (Valor de mercado), dicho se valor se obtiene descontando 
+        los flujos de efectivo que recibirá su poseedor en el futuro a una determinada tasa de descuento (tasa de rentabilidad exigida).
+        Esta tasa se puede considerar como la TIR del bono y viene determinada según todas las variables del mercado en función al riesgo
+          que afecta a dicho instrumento,la fórmula matemática para determinar el Valor Actual 
+        (la suma de los flujos de efectivo descontados que conlleva al valor de mercado) es la siguiente:</p>
+      
+        <div class="card_img">
+    <img src="./imgs/bonosValorActual.jpg.png" alt="bonos formula Valor actual">
+      </div>
+      <section> </section>
+
+       <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./javascript/login.js"></script> 
+      <script src="./javascript/bonos.js"></script>
+      <script src="./javascript/plazosFijos.js"></script>
+
+</body>
+</html>
